@@ -62,9 +62,9 @@ ex:
 
 [Machine Learning Tutorial Python - 4: Gradient Descent and Cost Function](https://www.youtube.com/watch?v=vsWrXfO3wWw)
 
-![image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/gradient_1.png)
+![image_description](images/images/gradient_1.png)
 
-![image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/gradient_2.png)
+![image_description](images/gradient_2.png)
 
 
 * Gradient ALWAYS points in the direction of great increase in LOSS function.

@@ -40,8 +40,8 @@ More info: https://www.tensorflow.org/tutorials/text/word_embeddings
 
 ### Embeddings in Neural Network
 
-![image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/embedding_1.png)
+![image_description](images/embedding_1.png)
 
-![image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/embedding_2.png)
+![image_description](images/embedding_2.png)
 
-![image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/embedding_3.png)
+![image_description](images/embedding_3.png)

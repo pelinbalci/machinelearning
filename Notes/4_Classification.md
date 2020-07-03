@@ -13,9 +13,11 @@ is the pred correct (T or F) &  prediction (P (1) or N (0))
 
         Accuracy = TP + TN / TP + TN + FP + FN
         
-        Recall = Sensitivity = TP / TP + FN
+        Recall = Sensitivity = TP Rate = TP / TP + FN
         
-        Precision = Specifity = TP / TP + FP
+        Specificity = TN / TN + FP
+        
+        Precision  = TP / TP + FP
         
 ⭐️ What is recall? 
 
@@ -64,21 +66,21 @@ But this is not very efficient.
 
 ROC & AUC is the curve of TP Rate vs FP rate. 
 
-⭐️ TP Rate = Recall = TP / TP + FN  --> actual is positive
+⭐️ TP Rate = Recall = Sensitivity = TP / TP + FN  --> actual is positive
 
-⭐️ FP Rate = FP / FP + TN ---> actual is negative
+⭐️ FP Rate = 1- Specificity =  FP / FP + TN ---> actual is negative
 
 
 #### ROC Examples:
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/roc_1.png)
+![Image description](images/roc_1.png)
 
 1. This ROC curve has an AUC between 0 and 0.5.  The corresponding model actually performs worse than random guessing! 
 2. This is the worst possible ROC curve; it ranks all negatives above all positives, and has an AUC of 0.0.  
 If you were to reverse every prediction (flip negatives to positives and postives to negatives), 
 you'd actually have a perfect classifier!
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/roc_2.png)
+![Image description](images/roc_2.png)
 
 3. This is the best possible ROC curve, as it ranks all positives above all negatives. It has an AUC of 1.0. 
 (You should be suspicious about this. you may have overfit to your training data, or the label data may be replicated 

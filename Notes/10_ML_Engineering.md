@@ -130,7 +130,7 @@ Let's look at different types of human biases that can manifest in training data
 We also provide strategies to identify them and evaluate their effects.
 
 
-![image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/bias.png)
+![image_description](images/bias.png)
 
 Identifying Bias:
 

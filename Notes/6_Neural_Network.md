@@ -61,7 +61,7 @@ Examples: https://developers.google.com/machine-learning/crash-course/introducti
 
 - Task1: 1 hidden Layer with 1 Neuron.
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/nn_task-1.png)
+![Image description](images/nn_task-1.png)
 
 The Activation is set to Linear, so this model cannot learn any nonlinearities. The loss is very high, and we say the 
 model underfits the data.
@@ -69,14 +69,14 @@ model underfits the data.
 
 - Task2: 1 hidden layer with 2 neurons
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/nn_task-2.png)
+![Image description](images/nn_task-2.png)
 
 The Activation is set to ReLu, but this model cannot reflect all the nonlinearities in this data set. 
 It still underfits the data. 
 
 - Task3: 1 hidden layer with 3 neurons
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/nn_task-3.png)
+![Image description](images/nn_task-3.png)
 
 A single hidden layer with 3 neurons is enough to model the data set. because the 📍XOR function can be expressed 
 as a combination of 3 half-planes (ReLU activation). You can see this from looking at the neuron images, 
@@ -112,7 +112,7 @@ In a good model with 3 neurons and ReLU activation, there will be:
 
 - Task4 : 3 hidden layers
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/nn_task-4.png)
+![Image description](images/nn_task-4.png)
 
 - The first layer will have the ability to try lots of different line slopes. 
 - The second layer will have the ability to accumulate them into lots of different shapes, 
@@ -126,13 +126,13 @@ It actually performs worse than the simpler model with just enough neurons to so
 
 The learned model had different shapes on each run. The converged test loss varied almost 2X from lowest to highest.
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/initialization_1.png)
+![Image_description](images/initialization_1.png)
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/initialization_2.png)
+![Image_description](images/initialization_2.png)
 
 Does adding more layers and neurons help?
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/more_layers_initialization.png)
+![Image_description](images/more_layers_initialization.png)
 
 Adding the layer and extra nodes produced more repeatable results. On each run, the resulting model looked roughly the 
 same. Furthermore, the converged test loss showed less variance between runs.
@@ -141,7 +141,7 @@ same. Furthermore, the converged test loss showed less variance between runs.
 
 This data set is a noisy spiral. Here; I tried different models:
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/spiral_basic.png)
+![Image_description](images/spiral_basic.png)
 
 Any of them doesn't give a good test loss =(
 
@@ -149,15 +149,15 @@ Let's add additional cross product features or other transformations.
 
 I've start with X1X2, sin(X1) and sin(X2):
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/more_feature_1.png)
+![Image_description](images/more_feature_1.png)
 
 Here tanh activation function is used for the same features:
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/more_feature_2.png)
+![Image_description](images/more_feature_2.png)
 
 I tried other features and layers combinations. I think the best loss is coming from the Spiral-14:
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/more_feature_3.png)
+![Image_description](images/more_feature_3.png)
 
 
 #### The solution provided by Google. 
@@ -169,7 +169,7 @@ Better than my work :(
 
 #### Start with only X1 & X2 
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/soln_1.png) 
+![Image_description](images/Notes/soln_1.png) 
 
 - There are 6 layers and 8 neurons in each layer.
 - This model is not very interpretable. 
@@ -180,7 +180,7 @@ Better than my work :(
 
 #### We can use less neurons but more features
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/soln_2.png) 
+![Image_description](images/Notes/soln_2.png) 
 
 - It is not simple but better. 
 - We can reduce the learning rate so that we don't get all of that jumping back and forth in the loss curve. 
@@ -189,7 +189,7 @@ Better than my work :(
 
 #### We can use regularization
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/soln_3.png) 
+![Image_description](images/soln_3.png) 
 
 - It penalizes complex models and overfitting. 
 - Make sure that the regularization isn't too high or it won't learn any complexity in the model. 
@@ -197,7 +197,7 @@ Better than my work :(
 
 #### Let's use X1X2 & sin(X1) & sin(X2) 🧡
 
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/soln_4.png) 
+![Image_description](images/soln_4.png) 
 
 - One of the major things you notice by adding more complex features is that especially on the first layer of the model,
 the features are much more complex.
@@ -208,7 +208,7 @@ the features are much more complex.
 
 #### Let's get rid of some of these layers and neurons 🧡
  
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/soln_5.png) 
+![Image_description](images/soln_5.png) 
 
 - By reducing # layers and neurons and also we've turned down the learning rate: 
 
@@ -219,7 +219,7 @@ the features are much more complex.
 
 #### Very very simple model 💛
     
-![Image_description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/soln_6.png) 
+![Image_description](images/soln_6.png) 
 
     - better test loss
     - much smoother fitting curve
@@ -239,9 +239,9 @@ the features are much more complex.
 
 You can find the mean squared error of each run below:
 
-Code path:/Users/pelin.balci/PycharmProjects/machinelearning/neural_networks/intro_nn.py
+[Code path](machine_learning/neural_networks/intro_nn.py)
 
-![image](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/experiment.png)
+![image](images/experiment.png)
     
         
 

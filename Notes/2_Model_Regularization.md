@@ -1,8 +1,8 @@
 #### Terminology
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/forward_pass.png)
+![Image description](images/forward_pass.png)
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/backpropagation.png)
+![Image description](images/backpropagation.png)
 
 
 

@@ -46,7 +46,7 @@ L1 will set the weight to exactly 0.
 
 #### EXERCISE
 
-![Image description](/Users/pelin.balci/PycharmProjects/machinelearning/Notes/L1_reg.png)
+![Image description](images/L1_reg.png)
 
 
 | Task | Regularization Type | Regularization Rate (lambda) | Test Loss | Train Loss | Test - Train Loss | X1 | X2 | X1^2 | X2^2 | X1X2 | 

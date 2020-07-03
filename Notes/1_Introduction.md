@@ -62,7 +62,7 @@ ex:
 
 [Machine Learning Tutorial Python - 4: Gradient Descent and Cost Function](https://www.youtube.com/watch?v=vsWrXfO3wWw)
 
-![image_description](images/images/gradient_1.png)
+![image_description](images/gradient_1.png)
 
 ![image_description](images/gradient_2.png)
 

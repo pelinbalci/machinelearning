@@ -65,9 +65,9 @@ z = 1  ---> prediction of linear regression
 
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 
-let's probability of class 1 = p
+Probability of class1 = p
 
-z is logodds. 
+z (prediction of linear regression ) is logodds. 
 
 ️logodds = log(p / 1-p)
 
@@ -75,7 +75,9 @@ z = log(p / 1-p)
 
 p / 1 - p = e^z
 
-y = e^z *(1- p)
+p = e^z *(1- p)
+
+p = e^z - e^z * p
 
 p ( 1+ e^z) = e^z
 
@@ -84,6 +86,8 @@ p = e^z / 1 + e^z
 p = 1 / 1 + e ^ -z
 
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
+
+Since z = 1: 
 
 p = 1 / 1 + e ^ -1
 
